@@ -1179,13 +1179,14 @@ section {
   }
 }
 
-.about h3 {
-  color: #01d3d0;
+.about p {
+  color: #FAF0D7;
   font-family: var(--font-secondary);
   font-weight: 300;
-  font-size: 32px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
+
 
 @media (max-width: 768px) {
   .about h3 {
@@ -1232,6 +1233,98 @@ section {
 }
 
 .about .tab-content i {
+  font-size: 22px;
+  line-height: 0;
+  margin-right: 8px;
+  color: #000;
+}
+
+
+/*--------------------------------------------------------------
+# Achivements Section
+--------------------------------------------------------------*/
+.Achivements {
+  background-color: #000;
+}
+
+.Achivements .Achivements-img {
+  position: relative;
+  margin: 60px 0 0 60px;
+}
+
+.Achivements .Achivements-img:before {
+  position: absolute;
+  inset: -60px 0 0 -60px;
+  z-index: -1;
+  content: "";
+  background: url("../img/about-bg.png") top left;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 575px) {
+  .Achivements .Achivements-img {
+    margin: 30px 0 0 30px;
+  }
+
+  .Achivements .Achivements-img:before {
+    inset: -30px 0 0 -30px;
+  }
+}
+
+.Achivements p {
+  color: #FAF0D7;
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .Achivements h3 {
+    font-size: 28px;
+  }
+}
+
+.Achivements .nav-pills {
+  border-bottom: 1px solid rgba(var(--color-secondary-rgb), 0.2);
+}
+
+.Achivements .nav-pills li+li {
+  margin-left: 40px;
+}
+
+.Achivements .nav-link {
+  background: #000;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  padding: 12px 0;
+  margin-bottom: -2px;
+  border-radius: 0;
+  font-family: var(--font-secondary);
+}
+
+.Achivements .nav-link.active {
+  color: var(--color-primary);
+  background: #000;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+@media (max-width: 575px) {
+  .Achivements .nav-link {
+    font-size: 16px;
+  }
+}
+
+.Achivements .tab-content h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  color: #000;
+}
+
+.Achivements .tab-content i {
   font-size: 22px;
   line-height: 0;
   margin-right: 8px;
