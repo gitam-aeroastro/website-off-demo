@@ -1188,6 +1188,7 @@ section {
 }
 
 
+
 @media (max-width: 768px) {
   .about h3 {
     font-size: 28px;
@@ -1237,6 +1238,14 @@ section {
   line-height: 0;
   margin-right: 8px;
   color: #000;
+}
+
+.about .tab-content .tab-pane .centered-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+
 }
 
 
@@ -1329,6 +1338,14 @@ section {
   line-height: 0;
   margin-right: 8px;
   color: #000;
+}
+
+.Achivements .tab-content .tab-pane .centered-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3000px; /* Adjust as needed */
+
 }
 
 /*--------------------------------------------------------------
