@@ -1244,9 +1244,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  height: auto;
-
+  height: 100vh; /* Adjust as needed */
 
 }
 
