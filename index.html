@@ -494,19 +494,32 @@
 
         <div class="section-header">
           <h2>Contact Us</h2>
-          <form>
-            <label for="name" class="bg-black text-main m-1 p-1">Name:</label><br>
-            <input type="text" name="name" class="w-4/5 bg-black border-4 border-solid rounded border-main m-1 p-1 shadow hover:bg-grey-600 focus:bg-white"/><br>
-            <label for="email" class="bg-black text-main m-1 p-1">E-Mail:</label><br>
-            <input type="email" name="email" class="w-4/5 bg-black border-4 border-solid rounded border-main m-1 p-1 shadow hover:bg-grey-600 focus:bg-white"/><br>
-            <label for="contactNo" class="bg-black text-main m-1 p-1">Contact No.:</label><br>
-            <input type="tel" name="contactNo" maxlength="10" minlength="10" class="w-4/5 bg-black border-4 border-solid rounded border-main m-1 p-1 shadow hover:bg-grey-600 focus:bg-white"/><br>
-            <label for="LinkdnProfile" class="bg-black text-main m-1 p-1">Linkdn Profile url:</label><br>
-            <input type="url" name="LinkdnProfile" class="w-4/5 bg-black border-4 border-solid rounded border-main m-1 p-1 shadow hover:bg-grey-600 focus:bg-white"/><br>
-            <input type="submit" value="Submit" class="bg-black text-main w-4/5 bg-black border-4 border-solid rounded border-main m-1 p-2 shadow hover:bg-grey-600 focus:bg-white"/>
+          <div class="container my-2 mx-2">
+            <form action="">
+              <div class="form-group">
+                <label class="form-label"  for="name">Name*:</label>
+                <input class="form-control" type="text" name="name" placeholder="Name" id="name" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label"  for="email">E-Mail:</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="name@example.com" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label"  for="contactNo">Contact No.:</label>
+                <input class="form-control" type="tel" name="contactNo" maxlength="10" minlength="10" placeholder="Contact No. {max-10 digits and min-10 digits}" id="contactNo" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label"  for="LinkdnProfile">Linkdn Profile url:</label>
+                <input class="form-control" type="url" name="LinkdnProfile" id="LinkdnProfile" placeholder="linkdin.com/in/ID/"/>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Please type your message here"></textarea>
+              </div>
+              <button type="submit" class="btn mb-2" value="Submit">Submit</button>
           </form>
         </div>
-
+      </div>
       </div>
 
       <div class="map">
